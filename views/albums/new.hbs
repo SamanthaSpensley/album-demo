@@ -1,0 +1,37 @@
+<h1>New Album</h1>
+
+<form action="/albums" method="POST">
+  <label for="artist">Artist:</label>
+  <input type="text" name="artist" id="artist"/>
+
+  <label for="album_name">Album Name:</label>
+  <input type="text" name="album_name" id="album_name" />
+
+  <label for="genre">Genre:</label>
+  <select name="genre" id="genre">
+    <option value="blues" selected>blues</option>
+    <option value="classical">classical</option>
+    <option value="country">country</option>
+    <option value="edm">EDM/dance</option>
+    <option value="funk">funk</option>
+    <option value="hip-hop">hip hop</option>
+    <option value="indie">indie</option>
+    <option value="jazz">jazz</option>
+    <option value="pop">pop</option>
+    <option value="rock">rock</option>
+  </select>
+
+  <label for="stars">Stars: 1-5</label>
+  <div id="stars">
+    <input type="radio" name="stars" value="1"/>
+    <input type="radio" name="stars" value="2"/>
+    <input type="radio" name="stars" value="3"/>
+    <input type="radio" name="stars" value="4"/>
+    <input type="radio" name="stars" value="5"/>
+  </div>
+
+  <label for="explicit">Check if contains explicit lyrics:</label>
+  <input type="checkbox" name="explicit" value=true />
+
+  <input type="submit" id="submit"/>
+</form>
