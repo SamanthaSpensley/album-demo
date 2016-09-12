@@ -1,15 +1,15 @@
-<h1>New Album</h1>
+<h1>Update Album</h1>
 
-<form action="/albums" method="POST">
+<form action="/albums/{{albums.id}}/edit" method="POST">
   <label for="artist" class="form-input">Artist:</label>
-  <input type="text" name="artist" id="artist"/>
+  <input type="text" name="artist" id="artist" value="{{albums.artist}}"/>
 
   <label for="album_name" class="form-input">Album Name:</label>
-  <input type="text" name="album_name" id="album_name" />
+  <input type="text" name="album_name" id="album_name" value="{{albums.name}}"/>
 
   <label for="genre" class="form-input">Genre:</label>
-  <select name="genre" id="genre">
-    <option value="blues" selected>blues</option>
+  <select name="genre" id="genre" value="{{albums.genre}}">
+    <option value="blues">blues</option>
     <option value="classical">classical</option>
     <option value="country">country</option>
     <option value="edm">EDM/dance</option>
@@ -37,7 +37,7 @@
   </div>
 
 
-  <input type="submit" class="submit"/>
+  <input type="submit" class="submit" value="Update Album"/>
 </form>
 
 <a href="/albums">Cancel</a>

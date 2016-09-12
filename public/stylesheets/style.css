@@ -12,7 +12,19 @@ form {
   flex-direction: column;
   width: 40vw;
 }
-#submit {
+.form-input {
   margin-top: 2vw;
-  width: 60px;
+}
+.checkbox {
+  display: inline;
+}
+.submit {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  width: 90px;
+}
+
+/*table*/
+td, th {
+  padding-left: 2vw;
 }

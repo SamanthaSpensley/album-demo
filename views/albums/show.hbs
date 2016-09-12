@@ -1,0 +1,21 @@
+<h1>Showing Album: {{albums.name}}</h1>
+
+<p>Genre: {{albums.genre}}</p>
+<p>Artist: {{albums.artist}}</p>
+
+<div>
+  <a href='/albums/{{albums.id}}/edit'>Edit</a>
+</div>
+
+<!-- <div>
+  <a href='/albums/{{albums.id}}/delete'>Delete</a>
+</div> -->
+
+<form action="/albums/{{albums.id}}/delete" method="POST">
+  <input type="hidden" name="id" value="{{albums.id}}" />
+  <input type="submit" class="submit" value="delete" />
+</form>
+
+<div>
+  <a href="/albums">Back to Albums</a>
+</div>

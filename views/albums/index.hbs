@@ -1,2 +1,19 @@
 <h1>Albums</h1>
 <a href="/albums/new">New Album</a>
+
+<table class="table form-input">
+  <thead>
+    <th>Genre</th>
+    <th>Artist</th>
+    <th>Album</th>
+  </thead>
+  <tbody>
+    {{#each albums}}
+    <tr>
+      <td>{{this.genre}}</td>
+      <td>{{this.artist}}</td>
+      <td><a href='/albums/{{this.id}}'>{{this.name}}</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
